@@ -4,9 +4,7 @@
 ### Descripcion
  el servicio contra con los siguientes funcionalidades: 
  * Consulta items
- * Registro items
- * Delete items
- * Update items
+
 
 
 ### Base de datos
