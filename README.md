@@ -21,3 +21,8 @@ la base de datos ser postgres y correra de manera independiente en un contenedor
 
 
 ## Pruebas
+
+```
+curl -X 'GET' \
+  'http://localhost:8082/api/laptops' 
+```
