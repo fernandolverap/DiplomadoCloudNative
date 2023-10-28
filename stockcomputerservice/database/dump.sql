@@ -20,7 +20,7 @@ SET row_security = off;
 -- Name: diplo_project; Type: DATABASE; Schema: -; Owner: diplo_user
 --
 
-CREATE DATABASE diplo_project WITH TEMPLATE = template0 ENCODING = 'UTF8' LOCALE_PROVIDER = libc LOCALE = 'en_US.UTF-8';
+--CREATE DATABASE diplo_project WITH TEMPLATE = template0 ENCODING = 'UTF8' LOCALE_PROVIDER = libc LOCALE = 'en_US.UTF-8';
 
 
 ALTER DATABASE diplo_project OWNER TO diplo_user;
@@ -45,7 +45,7 @@ SET row_security = off;
 -- *not* creating schema, since initdb creates it
 
 
-ALTER SCHEMA public OWNER TO postgres;
+ALTER SCHEMA public OWNER TO diplo_user;
 
 SET default_tablespace = '';
 
