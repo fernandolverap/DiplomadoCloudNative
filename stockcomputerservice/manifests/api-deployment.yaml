@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: api-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: api
+  template:
+    metadata:
+      labels:
+        app: api
+    spec:
+      containers:
+      - name: api-container
+        image: ferolvera/app:dev
+        ports:
+        - containerPort: 8080
+        env:
+        - name: POSTGRES_URL
+          value: "jdbc:postgresql://postgres-service:5432/diplo_project"
